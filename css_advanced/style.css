@@ -1,0 +1,36 @@
+.topbar {
+    background: url("CssImages/Object.png") center/cover no-repeat;
+    position: relative;
+    background-color: silver;
+    height: 100vh;
+
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 80px;
+    z-index: 10;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    width: 120px;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: rgb(233, 165, 233);
+}
