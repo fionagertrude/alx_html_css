@@ -891,3 +891,29 @@ nav {
 nav ul {
     margin-right: 0;
 }
+/* Force social links to far right */
+footer .footer-content {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+footer .social-links {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    transform: translateX(0) !important;
+}
+/* Force social links to far right */
+.footer-brand {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    flex-direction: row !important;
+}
+
+.social-links {
+    margin-left: auto !important;
+    order: 2 !important;
+}
