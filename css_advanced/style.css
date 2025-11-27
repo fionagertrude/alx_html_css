@@ -18,10 +18,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: silver;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    padding: 30px 80px;
+    background: none;
+    box-shadow: 0;
 }
 
 nav {
@@ -52,7 +50,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-<<<<<<< HEAD
     color: #C271FF;
 }
 
@@ -746,14 +743,151 @@ footer {
     .social-links i {
         font-size: 14px;
     }
-=======
-    color: rgb(233, 165, 233);
 }
-.main1 {
+/* Make logo purple with correct shade */
+nav img,
+.footer-brand img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(1500%) hue-rotate(250deg) brightness(95%) contrast(90%);
+}
+
+/* Make video thumbnail background white instead of purple play button */
+.video-thumbnail {
+    background: white !important;
+}
+
+.play-button {
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: #C271FF !important;
+}
+
+.play-button:hover {
+    background: white !important;
+}
+
+/* Make "Learn" in "Learn from the pros" purple */
+.pros-section h2 {
+    color: #071629;
+}
+
+.pros-section h2::first-word {
+    color: #C271FF;
+}
+
+/* Add Philip Massey's picture before stars in video ratings */
+.video-rating {
+    position: relative;
+    padding-left: 45px;
+    min-height: 30px;
+}
+
+.video-rating::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("CssImages/1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Remove the existing author image since we're moving it */
+.video-author img {
+    display: none;
+}
+
+/* Make "free" in "Free membership" purple */
+.membership-header h2 {
+    color: white;
+}
+
+.membership-header h2::first-word {
+    color: #C271FF;
+}
+
+/* Align social links to the right */
+.footer-content {
     display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.social-links {
+    margin-left: auto;
+}
+/* Fix "Learn from the pros" - make only "Learn" purple */
+.pros-section h2 {
+    color: white;
+}
+.pros-section h2::first-word {
+    color: #C271FF;
+}
+
+/* Fix "Free membership" - make only "Free" purple */
+.membership-header h2 {
+    color: white;
+}
+.membership-header h2::first-word {
+    color: #C271FF;
+}
+
+/* Fix social links - move them to far right */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
->>>>>>> 47320b76a57b1dc35e1a9074acb3a580b8025081
+    width: 100%;
+}
+.social-links {
+    margin-left: auto;
+    margin-right: 0;
+}
+/* Change top and bottom logo back to white */
+nav img,
+.footer-brand img {
+    filter: brightness(0) invert(1); /* Makes logo white */
+}
+
+/* Change small logos in free membership to purple */
+.membership-card img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(1500%) hue-rotate(250deg) brightness(95%) contrast(90%);
+}
+/* Remove background image from sections after hero */
+main > section:nth-child(2),
+main > section:nth-child(3),
+main > section:nth-child(4),
+main > section:nth-child(5) {
+    background-image: none !important;
+}
+/* Remove space between hero section and quote section */
+main > section:first-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+main > section:nth-child(2) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+/* Move quote section down to prevent overlapping with hero */
+main > section:nth-child(2) {
+    padding-top: 50px !important;
+}
+/* Bring logo and nav bar down for better visibility */
+header {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+/* Align logo and nav with pros section layout */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    margin-right: 0;
 }
