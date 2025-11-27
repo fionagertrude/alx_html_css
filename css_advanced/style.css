@@ -52,6 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+<<<<<<< HEAD
     color: #C271FF;
 }
 
@@ -745,4 +746,14 @@ footer {
     .social-links i {
         font-size: 14px;
     }
+=======
+    color: rgb(233, 165, 233);
+}
+.main1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+>>>>>>> 47320b76a57b1dc35e1a9074acb3a580b8025081
 }
