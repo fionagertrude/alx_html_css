@@ -38,3 +38,4 @@ A responsive headphones landing page built with HTML, CSS, and JavaScript. Featu
 - `8-script.js` - Hamburger menu, form validation, scroll animations
 
 **Demo:** Open `8-index.html` in your browser to see the full implementation!
+
